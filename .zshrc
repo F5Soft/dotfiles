@@ -22,6 +22,8 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' menu select
 
 # command alias
-alias ls='ls --color'
-alias l='ls'
-alias ll='ls -l'
+alias grep="grep --color=always"
+alias ls="ls -FG"
+alias l="ls -l"
+alias ll="ls -al"
+alias make="make -j $(nproc)"
